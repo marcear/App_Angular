@@ -1,0 +1,26 @@
+<mat-toolbar>
+
+<img [src]="logoPath">
+
+<span class="example-fill-remaining-space"></span>
+
+<span>Hi {{lionLoginID}}!</span>
+
+<mat-icon class="more-options-vertical" [matMenuTriggerFor]="menu">more_vert</mat-icon>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <span>Users</span>
+  </button>
+  <button mat-menu-item>
+    <span>Column Standards</span>
+  </button>
+  <button mat-menu-item>
+    <span>Edit Templates</span>
+  </button>
+  <button mat-menu-item>
+    <span>Sign Out</span>
+  </button>
+</mat-menu>
+
+</mat-toolbar>
