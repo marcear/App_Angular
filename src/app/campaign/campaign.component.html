@@ -1,0 +1,32 @@
+<app-side-navigation #navigation>
+
+    <app-header-toolbar
+      left-upper-content
+      [title]="headerTitle"
+      [icons]="headerIcons"
+      [displayToggle]="false"
+      >
+    </app-header-toolbar>
+
+    <div left-bottom-content>
+
+            LIST OF CAMPAIGNS
+
+    </div>
+  
+    <app-header-toolbar
+          right-upper-content
+          [title]="title"
+          [icons]="campaignIcons"
+          [toogleIcon]="toogleIcon"
+          [displayToggle]="true"
+        >
+    </app-header-toolbar>
+
+    <div right-bottom-content>
+
+        FLOWCHART
+
+    </div>
+
+</app-side-navigation>

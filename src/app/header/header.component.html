@@ -1,16 +1,16 @@
-<mat-toolbar>
+<mat-toolbar class="header-content">
 
 <img [src]="logoPath">
 
-<span class="example-fill-remaining-space"></span>
+<span class="fill-remaining-space"></span>
 
 <span>Hi {{lionLoginID}}!</span>
 
-<mat-icon class="more-options-vertical" [matMenuTriggerFor]="menu">more_vert</mat-icon>
+<mat-icon class="icon-space" [matMenuTriggerFor]="menu">more_vert</mat-icon>
 
 <mat-menu #menu="matMenu">
   <button mat-menu-item>
-    <span>Users</span>
+    <span routerLink="/users">Users</span>
   </button>
   <button mat-menu-item>
     <span>Column Standards</span>
