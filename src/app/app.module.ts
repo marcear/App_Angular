@@ -13,7 +13,10 @@ import { AppRoutingModule } from './/app-routing.module';
 import { CampaignComponent } from './campaign/campaign.component';
 import { RouterModule, Routes } from '@angular/router';
 import { UsersComponent } from './users/users.component';
-import { HeaderToolbarComponent } from './header-toolbar/header-toolbar.component'
+import { HeaderToolbarComponent } from './header-toolbar/header-toolbar.component';
+import { ListContentComponent } from './list-content/list-content.component';
+import { MatListModule } from '@angular/material/list';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/campaigns', pathMatch: 'full' },
@@ -29,9 +32,10 @@ const appRoutes: Routes = [
     SideNavigationComponent,
     CampaignComponent,
     UsersComponent,
-    HeaderToolbarComponent
+    HeaderToolbarComponent,
+    ListContentComponent
   ],
-  imports: [    
+  imports: [
     BrowserModule,
     MatToolbarModule,
     MatIconModule,
@@ -40,6 +44,8 @@ const appRoutes: Routes = [
     MatSidenavModule,
     AppRoutingModule,
     RouterModule.forRoot( appRoutes),
+    MatListModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,19 @@
+.mat-list-content {
+    padding-top: 0px !important;
+}
+
+.mat-list-content mat-list-item {
+    height: 100px !important;
+    cursor: pointer;
+}
+
+.extra-info {
+    margin-left: 30px;
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+
+.selected {
+    background-color: rgb(168,210,218) !important;
+    color: #fff !important;
+}
