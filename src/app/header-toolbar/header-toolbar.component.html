@@ -2,7 +2,7 @@
 
     <mat-toolbar-row>
       
-      <mat-icon *ngIf="displayToggle" class="icon-space">{{toogleIcon}}</mat-icon>
+      <mat-icon *ngIf="displayToggle" (click)="toggle()" class="icon-space">{{toogleIcon}}</mat-icon>
 
       <span>{{title}}</span>
       
