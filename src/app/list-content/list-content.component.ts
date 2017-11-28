@@ -9,6 +9,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class ListContentComponent {
 
   @Input() items: any[];
+  @Input() icons: any[];
   @Output() onItemClick = new EventEmitter<void>();
   @Output() onItemCheck = new EventEmitter<void>();
   selectedItemId: number = 0;

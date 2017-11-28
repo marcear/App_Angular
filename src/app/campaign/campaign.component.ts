@@ -28,6 +28,7 @@ export class CampaignComponent {
     { id: 11, name: 'WCC France', startDate: "25/07/2015", endDate: "25/12/2017"},
     { id: 12, name: 'WCC Malaysia', startDate: "15/04/2013", endDate: "09/11/2016"},
   ];
+  listIcons = ["info","dashboard"];
  
   onChangeView() {
     this.navigationComponent.toggle();

@@ -2,22 +2,30 @@
 
   <mat-list-item *ngFor="let item of items" (click)="itemClick($event, item.id)" [ngClass]="{'selected': isSelected(item.id)}">
 
-    <div style="width: 100%;">
+    <div class="takeItAll">
 
-    <mat-checkbox
-      [checked]="isChecked(item.id)"
-      (change)="itemCheck($event, item.id)"
-    >
-      <b>{{item.name | uppercase}}</b>
-    </mat-checkbox>
+      <mat-divider></mat-divider>
 
-    <div class='extra-info'>
-      Start Date: {{item.startDate}}
-      <br />
-      End Date: {{item.endDate}}
-    </div>
+      <div class="main-info">
 
-    <mat-divider></mat-divider>
+        <div class="wide">
+
+          <mat-checkbox [checked]="isChecked(item.id)" (change)="itemCheck($event, item.id)">
+            <b>{{item.name | uppercase}}</b>
+          </mat-checkbox>
+
+        </div>
+
+        <mat-icon class="narrow" *ngFor="let icon of icons" >{{icon}}</mat-icon>
+
+      </div>
+
+      <div class='extra-info'>
+
+        Start Date: {{item.startDate}}
+        <br /> End Date: {{item.endDate}}
+        
+      </div>
 
     </div>
 

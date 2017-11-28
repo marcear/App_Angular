@@ -7,13 +7,20 @@
     cursor: pointer;
 }
 
+.main-info {
+    display:flex;
+    margin-top:10px;
+}
+
 .extra-info {
     margin-left: 30px;
     line-height: 1.5;
-    padding-bottom: 10px;
 }
 
-.selected {
-    background-color: rgb(168,210,218) !important;
-    color: #fff !important;
+.narrow {
+    width: 30px;
+}
+
+.wide {
+    flex: 1;
 }
