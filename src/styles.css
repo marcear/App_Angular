@@ -7,3 +7,14 @@ html {
 
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import "~fullcalendar/dist/fullcalendar.min.css";
+@import "~fullcalendar-scheduler/dist/scheduler.min.css";
+
+  td.fc-other-month .fc-day-number {
+        display: none;
+        }
+
+#calendar {
+    max-width: 900px;
+    margin: 50px auto;
+}
