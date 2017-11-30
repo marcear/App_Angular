@@ -1,9 +1,9 @@
 <mat-sidenav-container class="takeItAll sidenav-container">
 
   <mat-sidenav #sidenav mode="side" opened="true">
-    
+
     <div class="takeItAll">
-      
+
       <ng-content select=[left-upper-content]></ng-content>
 
       <div class="scrolling-content">
@@ -11,13 +11,19 @@
       </div>
 
     </div>
-    
+
   </mat-sidenav>
 
   <ng-content select=[right-upper-content]></ng-content>
-  
+
   <div class="scrolling-content">
-    <ng-content select=[right-bottom-content]></ng-content>
+
+    <div class="right-nav-content">
+
+        <ng-content select=[right-bottom-content]></ng-content>
+
+    </div>
+
   </div>
 
 </mat-sidenav-container>

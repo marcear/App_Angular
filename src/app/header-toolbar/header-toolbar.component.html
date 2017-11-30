@@ -8,7 +8,7 @@
       
       <span class="fill-remaining-space"></span>
       
-      <mat-icon class="icon-space" *ngFor="let icon of icons">{{icon}}</mat-icon>
+      <mat-icon class="icon-space" *ngFor="let icon of icons" (click)="icon.action()">{{icon.name}}</mat-icon>
 
     </mat-toolbar-row>
 

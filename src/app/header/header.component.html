@@ -1,26 +1,26 @@
-<mat-toolbar class="header-content">
+<mat-toolbar class="header-size">
 
-<img [src]="logoPath">
+  <img [src]="logoPath">
 
-<span class="fill-remaining-space"></span>
+  <span class="fill-remaining-space"></span>
 
-<span>Hi {{lionLoginID}}!</span>
+  <span>Hi {{lionLoginID}}!</span>
 
-<mat-icon class="icon-space" [matMenuTriggerFor]="menu">more_vert</mat-icon>
+  <mat-icon class="icon-space" [matMenuTriggerFor]="menu">more_vert</mat-icon>
 
-<mat-menu #menu="matMenu">
-  <button mat-menu-item>
-    <span routerLink="/users">Users</span>
-  </button>
-  <button mat-menu-item>
-    <span>Column Standards</span>
-  </button>
-  <button mat-menu-item>
-    <span>Edit Templates</span>
-  </button>
-  <button mat-menu-item>
-    <span>Sign Out</span>
-  </button>
-</mat-menu>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <span routerLink="/users">Users</span>
+    </button>
+    <button mat-menu-item>
+      <span>Column Standards</span>
+    </button>
+    <button mat-menu-item>
+      <span>Edit Templates</span>
+    </button>
+    <button mat-menu-item>
+      <span>Sign Out</span>
+    </button>
+  </mat-menu>
 
 </mat-toolbar>

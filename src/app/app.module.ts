@@ -17,6 +17,14 @@ import { HeaderToolbarComponent } from './header-toolbar/header-toolbar.componen
 import { ListContentComponent } from './list-content/list-content.component';
 import { MatListModule } from '@angular/material/list';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { CampaignFormComponent } from './campaign-form/campaign-form.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { MatNativeDateModule } from '@angular/material'; 
+
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/campaigns', pathMatch: 'full' },
@@ -33,7 +41,8 @@ const appRoutes: Routes = [
     CampaignComponent,
     UsersComponent,
     HeaderToolbarComponent,
-    ListContentComponent
+    ListContentComponent,
+    CampaignFormComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +54,14 @@ const appRoutes: Routes = [
     AppRoutingModule,
     RouterModule.forRoot( appRoutes),
     MatListModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatProgressSpinnerModule,
+    MatInputModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]

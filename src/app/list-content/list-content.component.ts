@@ -14,7 +14,7 @@ export class ListContentComponent {
   @Output() onItemCheck = new EventEmitter<void>();
   selectedItemId: number = 0;
   checkedItemsId: Array<number> = [];
-
+  
   itemClick(event, id) {
     if (event.target.innerHTML.indexOf("checkbox") == -1){
       this.checkedItemsId = [];

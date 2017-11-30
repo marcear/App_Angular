@@ -9,20 +9,57 @@ body {
 .takeItAll {
     width: 100%;
     height: 100%;
+    padding: 0px;
 }
 
 .fill-remaining-space {
     flex: 1 1 auto;
 }
 
+.header-size{
+    height:50px;
+}
+
 .icon-space {
-    padding: 0 6px;
+    padding: 0 10px;
     cursor: pointer;
-  }
+}
+
+.input-space {  
+    padding-right: 30px;
+}
   
 .selected {
     background-color: rgb(168,210,218) !important;
     color: #fff !important;
+}
+
+.scrolling-content {
+    overflow: auto;
+    width: 100%;
+    height:calc(100% - 64px);
+}
+
+.right-nav-content{
+    padding:16px;
+    height:calc(100% - 32px);
+}
+
+.emptyContent {
+    font-size: 2em;
+    opacity: 0.3;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.spinner {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 /* You can add global styles to this file, and also import other style files */
