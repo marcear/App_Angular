@@ -16,8 +16,9 @@ body {
     flex: 1 1 auto;
 }
 
-.header-size{
+.header-size {
     height:50px !important;
+    background-color: #EEEEEE !important;
 }
 
 .icon-space {
@@ -62,5 +63,4 @@ body {
     height: 100%;
 }
 
-/* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import './theme';

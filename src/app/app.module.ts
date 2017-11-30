@@ -25,6 +25,9 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material'; 
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/campaigns', pathMatch: 'full' },
@@ -63,6 +66,8 @@ const appRoutes: Routes = [
     ReactiveFormsModule,
     MatNativeDateModule,
     MatSlideToggleModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
