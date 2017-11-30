@@ -1,15 +1,37 @@
 <mat-toolbar style="background-color: #37474F;color:white;">
 
-    <mat-toolbar-row>
-      
-      <mat-icon *ngIf="displayToggle" (click)="toggle()" class="icon-space">{{toogleIcon}}</mat-icon>
+  <mat-toolbar-row>
 
-      <span>{{title}}</span>
-      
-      <span class="fill-remaining-space"></span>
-      
-      <mat-icon class="icon-space" *ngFor="let icon of icons" (click)="icon.action()">{{icon.name}}</mat-icon>
+    <mat-icon *ngIf="displayToggle" (click)="toggle()" class="icon-space">{{toogleIcon}}</mat-icon>
 
-    </mat-toolbar-row>
+    <span>{{title}}</span>
 
-  </mat-toolbar>
+    <span class="fill-remaining-space"></span>
+
+    <div *ngIf="showFilterMenu">
+      <mat-icon class="icon-space" [matMenuTriggerFor]="filterMenu">filter_list</mat-icon>
+    </div>
+    <mat-menu #filterMenu="matMenu" panelClass="menu-filter">
+      <div style="padding:8px;">
+        Draft Campaigns
+        <mat-slide-toggle></mat-slide-toggle>
+      </div>
+      <button mat-menu-item [matMenuTriggerFor]="subMenuCountries">Countries</button>
+      <button mat-menu-item [matMenuTriggerFor]="subMenuClients">Clients</button>
+    </mat-menu>
+
+    <mat-menu #subMenuCountries="matMenu">
+      <button mat-menu-item></button>
+      <button mat-menu-item></button>
+    </mat-menu>
+
+    <mat-menu #subMenuClients="matMenu">
+      <button mat-menu-item></button>
+      <button mat-menu-item></button>
+    </mat-menu>
+
+    <mat-icon class="icon-space" *ngFor="let icon of icons" (click)="icon.action()">{{icon.name}}</mat-icon>
+
+  </mat-toolbar-row>
+
+</mat-toolbar>

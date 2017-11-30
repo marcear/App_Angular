@@ -22,9 +22,9 @@ import { CampaignFormComponent } from './campaign-form/campaign-form.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material'; 
-
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/campaigns', pathMatch: 'full' },
@@ -61,7 +61,8 @@ const appRoutes: Routes = [
     MatDatepickerModule,
     FormsModule,
     ReactiveFormsModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatSlideToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

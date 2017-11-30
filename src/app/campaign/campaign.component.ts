@@ -30,7 +30,6 @@ export class CampaignComponent {
   ];
 
   headerIcons = [
-    {name: 'filter_list', action: () => this.showFilterOptions() }, 
     {name: 'add', action:() => this.showNewCampaignForm()  }
   ];
 

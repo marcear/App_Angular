@@ -1,26 +1,29 @@
 <app-side-navigation #navigation>
 
-    <app-header-toolbar 
+    <app-header-toolbar
         left-upper-content 
         [title]="headerTitle" 
         [icons]="headerIcons" 
-        [displayToggle]="false">
+        [displayToggle]="false"
+        [showFilterMenu]="true">
     </app-header-toolbar>
 
     <app-list-content 
         left-bottom-content
         [items]="items" 
-        (onItemClick)="onCampaignClick($event)" 
+        (onItemClick)="onCampaignClick($event)"
         (onItemCheck)="onCampaignCheck($event)"
         [icons]="listIcons">
     </app-list-content>
 
     <app-header-toolbar
         right-upper-content
+        *ngIf="state == StateEnum.Data"
         [title]="title"
         [icons]="campaignIcons"
         [displayToggle]="true"
-        (onToggle)="onChangeView()">
+        (onToggle)="onChangeView()"
+        [showFilterMenu]="false">
     </app-header-toolbar>
 
     <div right-bottom-content 

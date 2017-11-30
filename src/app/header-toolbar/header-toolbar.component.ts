@@ -12,7 +12,8 @@ export class HeaderToolbarComponent {
   @Input() icons: any[];  
   @Input() displayToggle: boolean;
   @Output() onToggle = new EventEmitter<void>();
-
+  @Input() showFilterMenu: boolean;
+  
   arrowLeftIcon = "keyboard_arrow_left";
   arrowRightIcon = "keyboard_arrow_right";
   toogleIcon = this.arrowLeftIcon;
