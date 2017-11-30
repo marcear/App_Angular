@@ -19,7 +19,6 @@ import { MatListModule } from '@angular/material/list';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { CampaignFormComponent } from './campaign-form/campaign-form.component';
-import { MatInputModule } from '@angular/material/input';
 import { SchedulerComponent } from './scheduler/scheduler.component';
 import { HttpModule} from '@angular/http';
 import { CalendarComponent} from "angular2-fullcalendar/src/calendar/calendar";
@@ -27,10 +26,7 @@ import { MatDialogContent, MAT_PLACEHOLDER_GLOBAL_OPTIONS, MatInputModule} from 
 import { MatDialogModule} from '@angular/material/dialog';
 import { DialogExampleComponent } from './dialog-example/dialog-example.component';
 import { MatFormFieldModule} from '@angular/material/form-field';
-import { MatSelectModule} from '@angular/material/select';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { FormsModule } from '@angular/forms';
-import { MatButtonModule} from '@angular/material/button';
 import {EventService} from './eventService';
 import {CommonHelper} from "./commonHelper";
 import { MatSelectModule } from '@angular/material/select';
@@ -57,7 +53,7 @@ const appRoutes: Routes = [
     CampaignComponent,
     SchedulerComponent,
     CalendarComponent,
-    DialogExampleComponent
+    DialogExampleComponent,
     UsersComponent,
     HeaderToolbarComponent,
     ListContentComponent,
@@ -83,7 +79,7 @@ const appRoutes: Routes = [
     MatNativeDateModule,
     MatSlideToggleModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
     HttpModule,
     MatFormFieldModule,
     MatDialogModule,
@@ -98,7 +94,7 @@ const appRoutes: Routes = [
   ],
   providers: [
 		{provide: MAT_PLACEHOLDER_GLOBAL_OPTIONS, useValue: {float: 'always'}},
-    EventService, CommonHelper	],
+    EventService, CommonHelper],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
