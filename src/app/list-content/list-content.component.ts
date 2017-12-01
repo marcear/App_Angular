@@ -34,7 +34,7 @@ export class ListContentComponent {
   }
 
   isSelected(id) {
-    return (this.selectedItemId == id || this.checkedItemsId.includes(id));
+    return (this.selectedItemId == id);
   }
 
 }

@@ -10,6 +10,6 @@ export class HeaderComponent {
   constructor() { }
 
   lionLoginID = "fpulido2";
-  logoPath = 'assets/images/bb_logo.png';
+  logoPath = 'assets/images/logo-publicis.jpg';
 
 }
