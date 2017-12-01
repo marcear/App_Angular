@@ -65,3 +65,17 @@ body {
 }
 
 @import './theme';
+
+/**/
+/* You can add global styles to this file, and also import other style files */
+@import "~fullcalendar/dist/fullcalendar.min.css";
+@import "~fullcalendar-scheduler/dist/scheduler.min.css";
+
+  td.fc-other-month .fc-day-number {
+        display: none;
+        }
+
+#calendar {
+    max-width: 900px;
+    margin: 50px auto;
+}
