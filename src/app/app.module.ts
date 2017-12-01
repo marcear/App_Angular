@@ -24,7 +24,6 @@ import { HttpModule} from '@angular/http';
 import { CalendarComponent} from "angular2-fullcalendar/src/calendar/calendar";
 import { MatDialogContent, MAT_PLACEHOLDER_GLOBAL_OPTIONS, MatInputModule} from '@angular/material';
 import { MatDialogModule} from '@angular/material/dialog';
-import { DialogExampleComponent } from './dialog-example/dialog-example.component';
 import { MatFormFieldModule} from '@angular/material/form-field';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {EventService} from './eventService';
@@ -36,6 +35,7 @@ import { MatNativeDateModule } from '@angular/material';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { EventFormComponent } from './event-form/event-form.component';
 
 
 const appRoutes: Routes = [
@@ -53,11 +53,11 @@ const appRoutes: Routes = [
     CampaignComponent,
     SchedulerComponent,
     CalendarComponent,
-    DialogExampleComponent,
     UsersComponent,
     HeaderToolbarComponent,
     ListContentComponent,
-    CampaignFormComponent
+    CampaignFormComponent,
+    EventFormComponent
   ],
   imports: [
     BrowserModule,
@@ -90,7 +90,7 @@ const appRoutes: Routes = [
     FormsModule
   ],
    entryComponents: [
-     DialogExampleComponent
+     EventFormComponent
   ],
   providers: [
 		{provide: MAT_PLACEHOLDER_GLOBAL_OPTIONS, useValue: {float: 'always'}},
